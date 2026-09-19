@@ -1,0 +1,7 @@
+analogy to explain the getFacts function, 
+fetch(URL) sends workers to collect a package from another place. 
+After the package arrives, the whole package gets stored in response.
+When we do console.log(response), we are showing the full package with labels, status, and everything.
+Then .json() opens the package and converts the contents into a normal JavaScript object. 
+That extracted usable content gets stored in data, and console.log(data) shows the actual useful information. 
+getFacts is the name of the whole process doing all these steps together.

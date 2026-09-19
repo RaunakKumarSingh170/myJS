@@ -1,0 +1,31 @@
+<html>
+    <body style="display: flex;  flex-direction:column;  justify-content: center;  align-items: center;  height: 100vh;">
+
+
+        <button id="btn" style="background-color:burlywood; padding:auto ; margin-bottom: 20px;"
+        >Show me a cute fox photo</button>
+
+
+        <img id="photo" width="500"></img>
+        
+
+    <script>
+
+        const URL ="https://randomfox.ca/floof";
+        const cuteFoxPhoto = document.querySelector("#photo");
+        const btn=document.querySelector("#btn");
+    
+
+    const getImages = async () => {
+        let response = await fetch(URL);
+        console.log(response);
+        let data = await response.json();
+        console.log(data);
+        cuteFoxPhoto.src=data.image;
+    }
+    btn.addEventListener("click", getImages);
+    // getImages();
+
+    </script>
+    </body>
+</html>
