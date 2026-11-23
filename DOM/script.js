@@ -8,4 +8,4 @@ let kanye = document.querySelector(".nigga")
 console.dir(kanye)
 
 let batye = document.querySelectorAll(".heading-class")
-console.dir(batye)
+console.dir(batye) 
